@@ -13,7 +13,7 @@
 <div id="contTom" style="display:none;"><a id="By" class='button' onClick="terima()"></i>Lanjut</a><b id='buttonv2'></b><a id="Bn" class='button' onClick="tolak()"></i>Engga</a></div>
 </div>
 
-<script>const body = document.querySelector("body");function createHeart() {const heart = document.createElement("div"); heart.className = "fas fa-heart"; heart.style.left = (Math.random() * 90)+"vw"; heart.style.animationDuration = (Math.random()*3)+2+"s"; body.appendChild(heart);} setInterval(function name(params) {var heartArr = document.querySelectorAll(".fa-heart"); if (heartArr.length > 100) {heartArr[0].remove()}},100);</script>
+
 <script>
   function nonFo() {document.getElementById('idfoto').style.display = "none";} function showFo() {document.getElementById('idfoto').style.display = "block";}
   function nonDiv() {document.getElementById('Content').style = "opacity:0;visibility:hidden;margin-top:30vh;";} 
@@ -24,7 +24,6 @@
   function showTom() {document.getElementById('idkirim').style = "opacity:1;visibility:visible;margin-top:140px;";} function tombol(){contTom.style="display:flex";} function akhiran(){document.getElementById("akhiran").style = "display:inline-flex";}
   function otomatis() {befanimkata();setTimeout(animkata,400);contTom.style="display:none";setTimeout(tombol,1200);}
   function befanimkata(){katakata.style="transform:scale(.01);";katabawah.style="transform:scale(.01);";} function animkata() {katakata.style="transform:scale(1);";katabawah.style="transform:scale(1);";}
-  function animakhir() {akhiran.style="display:block;";}
   
   async function terimateks(){By.innerHTML = "Rindu";Bn.style="display:flex";setTimeout(animkata,400);setTimeout(kats,1500);}
   async function tolakteks(){await swalst.fire('' + teksnolak);}
