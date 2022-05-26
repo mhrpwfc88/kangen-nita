@@ -1,5 +1,6 @@
 <html><meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script><script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script><link href="https://Bbyy.feeldream.repl.co/style.css" rel="stylesheet" type="text/css" /><script src="https://Bbyy.feeldream.repl.co/script.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script><script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script><link href="https://Bbyy.feeldream.repl.co/style.css" rel="stylesheet" type="text/css" />
+<!-- <script src="https://Bbyy.feeldream.repl.co/script.js"></script> -->
 <head>
 <title>buat Nita aja</title>
 
@@ -21,9 +22,10 @@
   function loadfoto() {document.getElementById('foto1').src = gambar1;document.getElementById('foto2').src = gambar2;document.getElementById('foto3').src = gambar3;document.getElementById('foto4').src = gambar4;document.getElementById('foto5').src = gambar5;document.getElementById('foto6').src = gambar6;}
   function showAkhir() {setInterval(createHeart,200);document.getElementById('k2').style = "opacity:1;transform:scale(1);margin:0;";document.getElementById('ftdua').style = "transform:scale(1);";document.getElementById('final1').style = "transform:scale(1);";document.getElementById('Content').style.display = "none";}
   function mulaiakhir() {nonDiv();setTimeout(showAkhir,1400);setTimeout(finalis,2400);}
-  function showTom() {document.getElementById('idkirim').style = "opacity:1;visibility:visible;margin-top:140px;";} function tombol(){contTom.style="display:flex";} function akhiran(){document.getElementById("akhiran").style = "display:inline-flex";}
+ function showTom() {document.getElementById('idkirim').style = "opacity:1;visibility:visible;margin-top:140px;";} function tombol(){contTom.style="display:flex";} function akhiran(){document.getElementById("akhiran").style = "display:inline-flex";}
   function otomatis() {befanimkata();setTimeout(animkata,400);contTom.style="display:none";setTimeout(tombol,1200);}
   function befanimkata(){katakata.style="transform:scale(.01);";katabawah.style="transform:scale(.01);";} function animkata() {katakata.style="transform:scale(1);";katabawah.style="transform:scale(1);";}
+  function animakhir() {akhiran.style="display:block;";}
   
   async function terimateks(){By.innerHTML = "Rindu";Bn.style="display:flex";setTimeout(animkata,400);setTimeout(kats,1500);}
   async function tolakteks(){await swalst.fire('' + teksnolak);}
